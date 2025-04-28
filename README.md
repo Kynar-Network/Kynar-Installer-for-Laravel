@@ -128,7 +128,7 @@ We welcome contributions from the community. To contribute:
 4. Push to the branch
 5. Create a new Pull Request
 
-For detailed guidelines, see [CONTRIBUTION_GUIDELINES.md](setup/CONTRIBUTION_GUIDELINES.md)
+For detailed guidelines, see [CONTRIBUTION_GUIDELINES.md](CONTRIBUTION_GUIDELINES.md)
 
 ## License
 This project is licensed under custom terms that protect the Kynar Network brand and donation information. Key points:
@@ -138,7 +138,7 @@ This project is licensed under custom terms that protect the Kynar Network brand
 - 🔧 **Modifications**: Allowed with restrictions
 - 📜 **Legal Framework**: Governed by Swedish law
 
-See [LICENSE.md](setup/LICENSE.md) for complete terms and conditions.
+See [LICENSE.md](LICENSE.md) for complete terms and conditions.
 
 ## Final Thoughts
 The Kynar Installer aims to simplify the Laravel application setup process while maintaining security and reliability. We're committed to continuous improvement and welcome feedback from our users.
