@@ -23,8 +23,8 @@ Upload the necessary files to the `public` directory of your Laravel application
 You have two options:
 - **Overwrite** the existing `index.php` file.
 - **Manually insert** the following code at the beginning of your `public/index.php` file:
-  ```
-  //// KYNAR NETWORK LARAVEL INSTALLER START ////
+```php
+//// KYNAR NETWORK LARAVEL INSTALLER START ////
 
 function loadEnv() {
     $envPath = __DIR__ . '/../.env';
@@ -36,7 +36,7 @@ function loadEnv() {
     $envVariables = [];
 
     foreach ($lines as $line) {
-        if (strpos(trim($line), '#') === 0 || strpos(trim($line), '=') === false) continue; // Skip comments and invalid lines
+        if (strpos(trim($line), '#') === 0 || strpos(trim($line), '=') === false) continue;
         list($name, $value) = explode('=', $line, 2);
         $envVariables[trim($name)] = trim($value, '"\'');
     }
@@ -51,7 +51,6 @@ function env($key, $default = null) {
     }
     return isset($envVariables[$key]) ? $envVariables[$key] : $default;
 }
-
 
 $envPath = '../.env';
 
@@ -83,7 +82,7 @@ if (!$dbConfigured || !$appKeySet) {
 }
 
 //// KYNAR NETWORK LARAVEL INSTALLER END ////
-  ```
+```
   
   **Note:** The `KYNAR NETWORK` comments must remain to facilitate removal at the end of the installation process.
 
