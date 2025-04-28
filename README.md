@@ -23,7 +23,7 @@ Upload the necessary files to the `public` directory of your Laravel application
 You have two options:
 - **Overwrite** the existing `index.php` file.
 - **Manually insert** the following code at the beginning of your `public/index.php` file:
-  ```php
+  ```
   //// KYNAR NETWORK LARAVEL INSTALLER START ////
 
 function loadEnv() {
