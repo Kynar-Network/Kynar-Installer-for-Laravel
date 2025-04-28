@@ -17,6 +17,7 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 }
 
 //// KYNAR NETWORK LARAVEL INSTALLER START ////
+
 function loadEnv() {
     $envPath = __DIR__ . '/../.env';
     if (!file_exists($envPath)) {
@@ -27,7 +28,7 @@ function loadEnv() {
     $envVariables = [];
 
     foreach ($lines as $line) {
-        if (strpos(trim($line), '#') === 0 || strpos(trim($line), '=') === false) continue; // Skip comments and invalid lines
+        if (strpos(trim($line), '#') === 0 || strpos(trim($line), '=') === false) continue;
         list($name, $value) = explode('=', $line, 2);
         $envVariables[trim($name)] = trim($value, '"\'');
     }
@@ -42,7 +43,6 @@ function env($key, $default = null) {
     }
     return isset($envVariables[$key]) ? $envVariables[$key] : $default;
 }
-
 
 $envPath = '../.env';
 
