@@ -49,6 +49,25 @@ $envPath = '../.env';
 $dbConfigured = file_exists($envPath) && env('DB_CONNECTION') !== false;
 $appKeySet = env('APP_KEY') !== null;
 
+// Check required Laravel directories and files
+$requiredPaths = [
+    '../vendor' => 'Vendor directory missing. Please run composer install.',
+    '../storage' => 'Storage directory missing.',
+    '../storage/app' => 'Storage app directory missing.',
+    '../storage/framework' => 'Storage framework directory missing.',
+    '../storage/framework/cache' => 'Storage framework cache directory missing.',
+    '../storage/framework/sessions' => 'Storage framework sessions directory missing.',
+    '../storage/framework/views' => 'Storage framework views directory missing.',
+    '../storage/logs' => 'Storage logs directory missing.'
+];
+
+foreach ($requiredPaths as $path => $error) {
+    if (!file_exists(__DIR__ . '/' . $path)) {
+        header("Location: /setup/index.php");
+        exit;
+    }
+}
+
 if (!$dbConfigured || !$appKeySet) {
     header("Location: /setup/index.php");
     exit;
