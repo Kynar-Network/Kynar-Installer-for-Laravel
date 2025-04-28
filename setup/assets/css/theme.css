@@ -1,0 +1,115 @@
+/* Dark mode styles for Select2 */
+.dark .select2-container--default .select2-selection--single {
+    background-color: #333;
+    border-color: #444;
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-selection--single .select2-selection__arrow {
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-selection--single:hover {
+    border-color: #555;
+}
+
+.dark .select2-container--default .select2-selection--single:focus {
+    border-color: #666;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.5);
+}
+
+.dark .select2-container--default .select2-results__option {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-results__option:hover,
+.dark .select2-container--default .select2-results__option.select2-results__option--highlighted {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-search--dropdown .select2-search__field {
+    background-color: #444;
+    border-color: #555;
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-search--dropdown .select2-search__field:focus {
+    border-color: #666;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.5);
+}
+
+.dark .select2-container--default .select2-selection--multiple {
+    background-color: #333;
+    border-color: #444;
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #555;
+    border-color: #666;
+    color: #fff;
+}
+
+.dark .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff;
+}
+
+.flag-image {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.custom-tooltip {
+    position: absolute;
+    padding: 8px;
+    border-radius: 4px;
+    max-width: 300px;
+    word-wrap: break-word;
+    font-size: 14px;
+    z-index: 1000;
+
+    /* Light mode */
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode (Tailwind-compatible) */
+.dark .custom-tooltip {
+    background-color: #1f2937; /* Tailwind's gray-800 */
+    color: white;
+}
+
+#statusContainer {
+  display: flex; /* Enables flex layout for the container */
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+  flex-direction: row; /* Ensures the spinner and text are in a single row */
+}
+
+#statusMessage {
+  display: inline-flex; /* Keeps the spinner and text aligned inline */
+  align-items: center; /* Centers the spinner vertically with the text */
+  overflow: visible;
+}
+
+#statusMessage svg {
+  margin-right: 8px; /* Adds spacing between the spinner and the text */
+  vertical-align: middle; /* Aligns spinner with the text line */
+  display: inline; /* Ensures the SVG behaves like inline content */
+}

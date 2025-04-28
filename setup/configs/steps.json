@@ -1,0 +1,88 @@
+{
+    "steps": [
+        {
+            "id": "welcome",
+            "order": 1,
+            "title": "step_1_name",
+            "description": "step_1_description",
+            "controller": "App\\Controllers\\Steps\\WelcomeController",
+            "template": "install/steps/welcome",
+            "required": true,
+            "slug": "welcome",
+            "slug_default": "welcome",
+            "methods": ["GET"]
+        },
+        {
+            "id": "requirements",
+            "order": 1,
+            "title": "step_2_name",
+            "description": "step_2_description",
+            "controller": "App\\Controllers\\Steps\\RequirementsController",
+            "template": "install/steps/requirements",
+            "required": true,
+            "slug": "requirements",
+            "slug_default": "requirements",
+            "methods": ["GET"]
+        },
+        {
+            "id": "install-dependencies",
+            "order": 2,
+            "title": "step_3_name",
+            "description": "step_3_description",
+            "controller": "App\\Controllers\\Steps\\DependenciesController",
+            "template": "install/steps/install_dependencies",
+            "required": false,
+            "slug": "install-dependencies",
+            "slug_default": "install-dependencies",
+            "methods": ["GET"]
+        },
+        {
+            "id": "database",
+            "order": 3,
+            "title": "step_4_name",
+            "description": "step_4_description",
+            "controller": "App\\Controllers\\Steps\\DatabaseController",
+            "template": "install/steps/database",
+            "required": true,
+            "slug": "database",
+            "slug_default": "database",
+            "methods": ["GET", "POST"]
+        },
+        {
+            "id": "configuration",
+            "order": 4,
+            "title": "step_5_name",
+            "description": "step_5_description",
+            "controller": "App\\Controllers\\Steps\\WebsiteController",
+            "template": "install/steps/configuration",
+            "required": true,
+            "slug": "configuration",
+            "slug_default": "configuration",
+            "methods": ["GET", "POST"]
+        },
+        {
+            "id": "create_account",
+            "order": 5,
+            "title": "step_6_name",
+            "description": "step_6_description",
+            "controller": "App\\Controllers\\Steps\\AccountController",
+            "template": "install/steps/create-account",
+            "required": true,
+            "slug": "create-account",
+            "slug_default": "create-account",
+            "methods": ["GET", "POST"]
+        },
+        {
+            "id": "finalize",
+            "order": 6,
+            "title": "step_7_name",
+            "description": "step_7_description",
+            "controller": "App\\Controllers\\Steps\\FinalizeController",
+            "template": "install/steps/complete",
+            "required": true,
+            "slug": "finalize",
+            "slug_default": "finalize",
+            "methods": ["GET"]
+        }
+    ]
+}

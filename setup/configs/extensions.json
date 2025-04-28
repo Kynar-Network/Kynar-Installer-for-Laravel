@@ -1,0 +1,112 @@
+{
+    "extensions": [
+        {
+            "extension_name": "Ctype",
+            "extension_id": "ctype",
+            "extension_description": "The Ctype PHP Extension is required for type checking functions.",
+            "required": true
+        },
+        {
+            "extension_name": "cURL",
+            "extension_id": "curl",
+            "extension_description": "The cURL PHP Extension is required for making HTTP requests.",
+            "required": true
+        },
+        {
+            "extension_name": "DOM",
+            "extension_id": "dom",
+            "extension_description": "The DOM PHP Extension is required for working with XML and HTML documents.",
+            "required": true
+        },
+        {
+            "extension_name": "Fileinfo",
+            "extension_id": "fileinfo",
+            "extension_description": "The Fileinfo PHP Extension is required for determining the MIME type of files.",
+            "required": true
+        },
+        {
+            "extension_name": "Filter",
+            "extension_id": "filter",
+            "extension_description": "The Filter PHP Extension is required for validating and sanitizing data.",
+            "required": true
+        },
+        {
+            "extension_name": "Hash",
+            "extension_id": "hash",
+            "extension_description": "The Hash PHP Extension is required for generating hash values.",
+            "required": true
+        },
+        {
+            "extension_name": "Mbstring",
+            "extension_id": "mbstring",
+            "extension_description": "The Mbstring PHP Extension is required for handling multibyte string operations.",
+            "required": true
+        },
+        {
+            "extension_name": "OpenSSL",
+            "extension_id": "openssl",
+            "extension_description": "The OpenSSL PHP Extension is required for security features of Laravel.",
+            "required": true
+        },
+        {
+            "extension_name": "PCRE",
+            "extension_id": "pcre",
+            "extension_description": "The PCRE (Perl Compatible Regular Expressions) PHP Extension is required for regular expression operations.",
+            "required": true
+        },
+        {
+            "extension_name": "PDO",
+            "extension_id": "pdo",
+            "extension_description": "The PDO (PHP Data Objects) PHP Extension is required for database connectivity.",
+            "required": true
+        },
+        {
+            "extension_name": "Session",
+            "extension_id": "session",
+            "extension_description": "The Session PHP Extension is required for managing user sessions.",
+            "required": true
+        },
+        {
+            "extension_name": "Tokenizer",
+            "extension_id": "tokenizer",
+            "extension_description": "The Tokenizer PHP Extension is required for tokenizing PHP code.",
+            "required": true
+        },
+        {
+            "extension_name": "XML",
+            "extension_id": "xml",
+            "extension_description": "The XML PHP Extension is required for working with XML data.",
+            "required": true
+        },
+        {
+            "extension_name": "SQLite",
+            "extension_id": "pdo_sqlite",
+            "extension_description": "The PDO SQLite Extension is optional for SQLite database support.",
+            "required": true
+        },
+        {
+            "extension_name": "MySQL",
+            "extension_id": "pdo_mysql",
+            "extension_description": "The PDO MySQL Extension is optional for MySQL database support.",
+            "required": false
+        },
+        {
+            "extension_name": "MariaDB",
+            "extension_id": "pdo_mysql",
+            "extension_description": "The PDO MySQL Extension is also used for MariaDB database support (same as PDO MySQL).",
+            "required": false
+        },
+        {
+            "extension_name": "PostgreSQL",
+            "extension_id": "pdo_pgsql",
+            "extension_description": "The PDO PostgreSQL Extension is optional for PostgreSQL database support.",
+            "required": false
+        },
+        {
+            "extension_name": "SQL Server",
+            "extension_id": "pdo_sqlsrv",
+            "extension_description": "The PDO SQL Server Extension is optional for SQL Server database support.",
+            "required": false
+        }
+    ]
+}
