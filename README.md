@@ -25,42 +25,64 @@ You have two options:
 - **Manually insert** the following code at the beginning of your `public/index.php` file:
   ```php
   //// KYNAR NETWORK LARAVEL INSTALLER START ////
-  function loadEnv() {
-      $envPath = __DIR__ . '/../.env';
-      if (!file_exists($envPath)) {
-          return [];
-      }
 
-      $lines = file($envPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-      $envVariables = [];
+function loadEnv() {
+    $envPath = __DIR__ . '/../.env';
+    if (!file_exists($envPath)) {
+        return [];
+    }
 
-      foreach ($lines as $line) {
-          if (strpos(trim($line), '#') === 0 || strpos(trim($line), '=') === false) continue; // Skip comments and invalid lines
-          list($name, $value) = explode('=', $line, 2);
-          $envVariables[trim($name)] = trim($value, '"\'');
-      }
+    $lines = file($envPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $envVariables = [];
 
-      return $envVariables;
-  }
+    foreach ($lines as $line) {
+        if (strpos(trim($line), '#') === 0 || strpos(trim($line), '=') === false) continue; // Skip comments and invalid lines
+        list($name, $value) = explode('=', $line, 2);
+        $envVariables[trim($name)] = trim($value, '"\'');
+    }
 
-  function env($key, $default = null) {
-      static $envVariables = [];
-      if (empty($envVariables)) {
-          $envVariables = loadEnv();
-      }
-      return isset($envVariables[$key]) ? $envVariables[$key] : $default;
-  }
+    return $envVariables;
+}
 
-  $envPath = '../.env';
+function env($key, $default = null) {
+    static $envVariables = [];
+    if (empty($envVariables)) {
+        $envVariables = loadEnv();
+    }
+    return isset($envVariables[$key]) ? $envVariables[$key] : $default;
+}
 
-  $dbConfigured = file_exists($envPath) && env('DB_CONNECTION') !== false;
-  $appKeySet = env('APP_KEY') !== null;
 
-  if (!$dbConfigured || !$appKeySet) {
-      header("Location: /setup/index.php");
-      exit;
-  }
-  //// KYNAR NETWORK LARAVEL INSTALLER END ////
+$envPath = '../.env';
+
+$dbConfigured = file_exists($envPath) && env('DB_CONNECTION') !== false;
+$appKeySet = env('APP_KEY') !== null;
+
+// Check required Laravel directories and files
+$requiredPaths = [
+    '../vendor' => 'Vendor directory missing. Please run composer install.',
+    '../storage' => 'Storage directory missing.',
+    '../storage/app' => 'Storage app directory missing.',
+    '../storage/framework' => 'Storage framework directory missing.',
+    '../storage/framework/cache' => 'Storage framework cache directory missing.',
+    '../storage/framework/sessions' => 'Storage framework sessions directory missing.',
+    '../storage/framework/views' => 'Storage framework views directory missing.',
+    '../storage/logs' => 'Storage logs directory missing.'
+];
+
+foreach ($requiredPaths as $path => $error) {
+    if (!file_exists(__DIR__ . '/' . $path)) {
+        header("Location: /setup/index.php");
+        exit;
+    }
+}
+
+if (!$dbConfigured || !$appKeySet) {
+    header("Location: /setup/index.php");
+    exit;
+}
+
+//// KYNAR NETWORK LARAVEL INSTALLER END ////
   ```
   **Note:** The `KYNAR NETWORK` comments must remain to facilitate removal at the end of the installation process.
 
