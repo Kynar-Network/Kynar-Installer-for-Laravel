@@ -17,6 +17,7 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 }
 
 //// KYNAR NETWORK LARAVEL INSTALLER START ////
+
 function loadEnv() {
     $envPath = __DIR__ . '/../.env';
     if (!file_exists($envPath)) {
