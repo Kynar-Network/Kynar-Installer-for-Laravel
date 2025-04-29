@@ -177,38 +177,40 @@
             console.log(data);
             console.log('Operation completed successfully');
             if (data.redirect) {
-                // Delete folder and appear the message if success
-                const deletefolder = await performFetch(
-                    "<?php echo generateUrl('setup.delete-folder'); ?>",
-                    'POST', {}, {
-                        key: "<?php echo $key; ?>"
-                    }
-                );
 
-                if (deletefolder.success) {
-                    Swal.fire({
-                        title: `<?php echo htmlspecialchars(t("congratulations", "Congratulations!")); ?>`,
-                        html: `<p>${data.message}</p>`,
-                        icon: "success",
-                        confirmButtonText: `<?php echo htmlspecialchars(t("finalize", "Finalize")); ?>`,
-                    }).then((result) => {
-                        /* Read more about isConfirmed, isDenied below */
-                        if (result.isConfirmed) {
-                            window.location.href = data.url;
-                        }
-                    });
-                }
-                else {
-                    console.error("<?php echo htmlspecialchars('delete_folder_failed', 'Error: Deleting folder failed. Please delete the setup folder manually.'); ?>");
-                    alert("<?php echo htmlspecialchars('delete_folder_failed', 'Error: Deleting folder failed. Please delete the setup folder manually.'); ?>");
-                }
+                Swal.fire({
+                    title: `<?php echo htmlspecialchars(t("congratulations", "Congratulations!")); ?>`,
+                    html: `<p>${data.message}</p>`,
+                    icon: "success",
+                    confirmButtonText: `<?php echo htmlspecialchars(t("finalize", "Finalize")); ?>`,
+                    willOpen: () => {
+                        deleteFunction(); // Call your function here
+                    }
+
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        window.location.href = data.url;
+                    }
+                })
             } else {
                 console.log(data.message);
                 alert(data.message);
             }
         } else {
-            console.error("<?php echo htmlspecialchars('error', '❌ Error: '); ?>", data.error);
-            alert("<?php echo htmlspecialchars('error', '❌ Error: '); ?>", data.error);
+            console.error("<?php echo htmlspecialchars(t('error', '❌ Error: ')); ?>", data.error);
+            alert("<?php echo htmlspecialchars(t('error', '❌ Error: ')); ?>", data.error);
         }
+
+        async function deleteFunction() {
+            // Delete folder and appear the message if success
+            const deletefolder = await performFetch(
+                        "<?php echo generateUrl('setup.delete-folder'); ?>",
+                        'POST', {}, {
+                            key: "<?php echo $key; ?>"
+                        }
+                    );
+        }
+
     });
 </script>
