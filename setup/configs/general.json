@@ -1,15 +1,1 @@
-{
-    "default_language": "en",
-    "fallback_language": "en",
-    "installer": {
-      "name": "Kynar Installer",
-      "version": "1.0.0"
-    },
-    "requirements": {
-      "php_version": "8.2.0"
-    },
-    "encryption_key": "aaaaaaaaa",
-    "setup_key": "bbbbbbbb",
-    "original_setup_key": "ccccccccc",
-    "default_template": "general"
-  }
+{"default_language":"en","fallback_language":"en","installer":{"name":"Kynar Installer","version":"1.0.0"},"requirements":{"php_version":"8.2.0"},"encryption_key":"","setup_key":"","original_setup_key":"","default_template":"general"}

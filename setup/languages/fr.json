@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "L'extension PDO SQLite est optionnelle pour prendre en charge la base de données SQLite.",
         "ext_desc.pdo_mysql": "L'extension PDO MySQL est optionnelle pour prendre en charge les bases de données MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "L'extension PDO PostgreSQL est optionnelle pour prendre en charge la base de données PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "L'extension PDO SQL Server est optionnelle pour prendre en charge la base de données SQL Server."
+        "ext_desc.pdo_sqlsrv": "L'extension PDO SQL Server est optionnelle pour prendre en charge la base de données SQL Server.",
+        "delete_folder_failed": "Erreur : Échec de la suppression du dossier. Veuillez supprimer le dossier d'installation manuellement."
     }
 }

@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Kuzinaziriwa PDO SQLite ni chaguo la msingi kwa msaada wa tabiaza ya SQLite.",
         "ext_desc.pdo_mysql": "Kuzinaziriwa PDO MySQL ni chaguo la msingi kwa msaada wa vyenzo vya tabiaza ya MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Kuzinaziriwa PDO PostgreSQL ni chaguo la msingi kwa msaada wa tabiaza ya PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Kuzinaziriwa PDO SQL Server ni chaguo la msingi kwa msaada wa tabiaza ya SQL Server."
+        "ext_desc.pdo_sqlsrv": "Kuzinaziriwa PDO SQL Server ni chaguo la msingi kwa msaada wa tabiaza ya SQL Server.",
+        "delete_folder_failed": "Hitilafu: Usitishaji wa folda haukufaulu. Tafadhali futa folda ya usanidi kwa mkono."
     }
 }

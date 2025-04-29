@@ -14,6 +14,7 @@ $router->addRoute('GET', '/setup/{lang}', 'InstallController@index', 'setup.inde
 // API endpoints
 $router->addRoute('POST', '/setup/create-env', 'UtilsController@create_env', 'setup.env.create');
 $router->addRoute('POST', '/setup/complete', 'CompletedController@updateIndexFile', 'setup.complete');
+$router->addRoute('POST', '/setup/delete-folder', 'UtilsController@deleteFolder', 'setup.delete-folder');
 $router->addRoute('GET', '/setup/{lang}/migrate-stream/{key}', 'MigrateStreamController@handle', 'setup.migrate.stream');
 $router->addRoute('GET', '/setup/{lang}/dependencies-stream/{key}', 'DependenciesStreamController@handle', 'setup.dependencies.stream');
 

@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "De PDO SQLite-extensie is optioneel voor ondersteuning van de SQLite-database.",
         "ext_desc.pdo_mysql": "De PDO MySQL-extensie is optioneel voor ondersteuning van MySQL/MariaDB-databases.",
         "ext_desc.pdo_pgsql": "De PDO PostgreSQL-extensie is optioneel voor ondersteuning van de PostgreSQL-database.",
-        "ext_desc.pdo_sqlsrv": "De PDO SQL Server-extensie is optioneel voor ondersteuning van de SQL Server-database."
+        "ext_desc.pdo_sqlsrv": "De PDO SQL Server-extensie is optioneel voor ondersteuning van de SQL Server-database.",
+        "delete_folder_failed": "Fout: Verwijderen van de map is mislukt. Verwijder de setupmap handmatig."
     }
 }

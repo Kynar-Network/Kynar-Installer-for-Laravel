@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite扩展是可选的，用于支持SQLite数据库。",
         "ext_desc.pdo_mysql": "PDO MySQL扩展是可选的，用于支持MySQL/MariaDB数据库。",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL扩展是可选的，用于支持PostgreSQL数据库。",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server扩展是可选的，用于支持SQL Server数据库。"
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server扩展是可选的，用于支持SQL Server数据库。",
+        "delete_folder_failed": "错误：删除文件夹失败。请手动删除安装文件夹。"
     }
 }

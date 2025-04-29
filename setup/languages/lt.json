@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite plėtinys yra pasirinktinis SQLite duomenų bazės palaikymui.",
         "ext_desc.pdo_mysql": "PDO MySQL plėtinys yra pasirinktinis MySQL/MariaDB duomenų bazės palaikymui.",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL plėtinys yra pasirinktinis PostgreSQL duomenų bazės palaikymui.",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server plėtinys yra pasirinktinis SQL Server duomenų bazės palaikymui."
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server plėtinys yra pasirinktinis SQL Server duomenų bazės palaikymui.",
+        "delete_folder_failed": "Klaida: Nepavyko ištrinti aplanko. Prašome rankiniu būdu ištrinti diegimo aplanką."
     }
 }

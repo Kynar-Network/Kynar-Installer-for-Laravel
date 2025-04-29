@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "ה المل첩 PDO SQLite אופציונלי לתמיכה בבסיס נתונים של SQLite.",
         "ext_desc.pdo_mysql": "ה מל첩 PDO MySQL אופציונלי לתמיכה בבסיסי נתונים של MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "ה מל첩 PDO PostgreSQL אופציונלי לתמיכה בבסיס بيانات של PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "הمل첩 PDO SQL Server אופציונלי לתמיכה בבסיס נתונים של SQL Server."
+        "ext_desc.pdo_sqlsrv": "הمل첩 PDO SQL Server אופציונלי לתמיכה בבסיס נתונים של SQL Server.",
+        "delete_folder_failed": "שגיאה: מחיקת התיקייה נכשלה. אנא מחק את תיקיית ההתקנה ידנית."
     }
 }

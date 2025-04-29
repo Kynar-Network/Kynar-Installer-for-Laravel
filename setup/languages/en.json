@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "The PDO SQLite Extension is optional for SQLite database support.",
         "ext_desc.pdo_mysql": "The PDO MySQL Extension is optional for MySQL/MariaDB database support.",
         "ext_desc.pdo_pgsql": "The PDO PostgreSQL Extension is optional for PostgreSQL database support.",
-        "ext_desc.pdo_sqlsrv": "The PDO SQL Server Extension is optional for SQL Server database support."
+        "ext_desc.pdo_sqlsrv": "The PDO SQL Server Extension is optional for SQL Server database support.",
+        "delete_folder_failed": "Error: Deleting folder failed. Please delete the setup folder manually."
     }
 }

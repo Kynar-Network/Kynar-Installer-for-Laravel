@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "การขยาย PDO SQLite เป็นทางเลือกสำรองฐานข้อมูล SQLite",
         "ext_desc.pdo_mysql": "การขยาย PDO MySQL เป็นทางเลือกสำรองฐานข้อมูล MySQL/MariaDB",
         "ext_desc.pdo_pgsql": "การขยาย PDO PostgreSQL เป็นทางเลือกสำรองฐานข้อมูล PostgreSQL",
-        "ext_desc.pdo_sqlsrv": "การขยาย PDO SQL Server เป็นทางเลือกสำรองฐานข้อมูล SQL Server"
+        "ext_desc.pdo_sqlsrv": "การขยาย PDO SQL Server เป็นทางเลือกสำรองฐานข้อมูล SQL Server",
+        "delete_folder_failed": "ข้อผิดพลาด: การลบโฟลเดอร์ล้มเหลว กรุณาลบโฟลเดอร์ติดตั้งด้วยตนเอง"
     }
 }

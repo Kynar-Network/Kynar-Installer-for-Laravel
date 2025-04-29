@@ -104,7 +104,70 @@ ENV;
         ], 'manual');
     }
 
-      /**
+    public function deleteFolder()
+    {
+        $setupFolderPath = __DIR__ . '/../../../setup';
+        // Always fallback to PHP's recursive directory deletion if commands fail
+        if (file_exists($setupFolderPath)) {
+            header('Content-Type: application/json');
+            echo json_encode([
+                "success" => true,
+            ]);
+          $this->deleteSetupFolder($setupFolderPath);
+        }
+    }
+
+    private function deleteSetupFolder($setupFolderPath)
+    {
+        // Windows-specific command for directory removal
+        if (PHP_OS_FAMILY === 'Windows') {
+            if (function_exists('shell_exec')) {
+                shell_exec('rd /s /q "' . str_replace('/', '\\', $setupFolderPath) . '"');
+            } elseif (function_exists('exec')) {
+                exec('rd /s /q "' . str_replace('/', '\\', $setupFolderPath) . '"');
+            } elseif (function_exists('system')) {
+                system('rd /s /q "' . str_replace('/', '\\', $setupFolderPath) . '"');
+            }
+        } else {
+            // Unix-based systems
+            if (function_exists('shell_exec')) {
+                shell_exec("rm -rf " . escapeshellarg($setupFolderPath));
+            } elseif (function_exists('exec')) {
+                exec("rm -rf " . escapeshellarg($setupFolderPath));
+            } elseif (function_exists('system')) {
+                system("rm -rf " . escapeshellarg($setupFolderPath));
+            }
+        }
+
+        // Always fallback to PHP's recursive directory deletion if commands fail
+        if (file_exists($setupFolderPath)) {
+            $this->deleteDirectory($setupFolderPath);
+        }
+    }
+
+    private function deleteDirectory($dir)
+    {
+        if (!file_exists($dir)) {
+            return true;
+        }
+
+        if (!is_dir($dir)) {
+            return unlink($dir);
+        }
+
+        foreach (scandir($dir) as $item) {
+            if ($item == '.' || $item == '..') {
+                continue;
+            }
+
+            if (!$this->deleteDirectory($dir . DIRECTORY_SEPARATOR . $item)) {
+                return false;
+            }
+        }
+
+        return rmdir($dir);
+    }
+    /**
      * Get the base URL for assets
      */
     public function getAssetsUrl(): string

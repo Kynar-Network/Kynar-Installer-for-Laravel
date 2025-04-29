@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Ang PDO SQLite Extension ay opsyonal para sa suporta sa database ng SQLite.",
         "ext_desc.pdo_mysql": "Ang PDO MySQL Extension ay opsyonal para sa suporta sa mga database ng MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Ang PDO PostgreSQL Extension ay opsyonal para sa suporta sa database ng PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Ang PDO SQL Server Extension ay opsyonal para sa suporta sa database ng SQL Server."
+        "ext_desc.pdo_sqlsrv": "Ang PDO SQL Server Extension ay opsyonal para sa suporta sa database ng SQL Server.",
+        "delete_folder_failed": "Error: Nabigo ang pag-delete ng folder. Mangyaring tanggalin ang setup folder nang mano-mano."
     }
 }

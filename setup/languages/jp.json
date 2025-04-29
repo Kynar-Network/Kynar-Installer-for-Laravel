@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite拡張はSQLiteデータベースサポートがオプションです。",
         "ext_desc.pdo_mysql": "PDO MySQL拡張はMySQL/MariaDBデータベースサポートがオプションです。",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL拡張はPostgreSQLデータベースサポートがオプションです。",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server拡張はSQL Serverデータベースサポートがオプションです。"
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server拡張はSQL Serverデータベースサポートがオプションです。",
+        "delete_folder_failed": "エラー: フォルダの削除に失敗しました。手動でセットアップフォルダを削除してください。"
     }
 }

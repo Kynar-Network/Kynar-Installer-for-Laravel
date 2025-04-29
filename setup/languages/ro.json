@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Extensia PDO SQLite este opțională pentru suportul bazei de date SQLite.",
         "ext_desc.pdo_mysql": "Extensia PDO MySQL este opțională pentru suportul bazelor de date MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Extensia PDO PostgreSQL este opțională pentru suportul bazei de date PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Extensia PDO SQL Server este opțională pentru suportul bazei de date SQL Server."
+        "ext_desc.pdo_sqlsrv": "Extensia PDO SQL Server este opțională pentru suportul bazei de date SQL Server.",
+        "delete_folder_failed": "Eroare: Ștergerea folderului a eșuat. Vă rugăm să ștergeți folderul de instalare manual."
     }
 }

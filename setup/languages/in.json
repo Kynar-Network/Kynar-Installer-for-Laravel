@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite एक्सटेंशन SQLite डेटाबेस समर्थन के लिए वॉप्शनल है।",
         "ext_desc.pdo_mysql": "PDO MySQL एक्सटेंशन MySQL/MariaDB डेटाबेस समर्थन के लिए वॉप्शनल है।",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL एक्सटेंशन PostgreSQL डेटाबेस समर्थन के लिए वॉप्शनल है।",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server एक्सटेंशन SQL Server डेटाबेस समर्थन के लिए वॉप्शनल है।"
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server एक्सटेंशन SQL Server डेटाबेस समर्थन के लिए वॉप्शनल है।",
+        "delete_folder_failed": "त्रुटि: फ़ोल्डर हटाने में विफल। कृपया सेटअप फ़ोल्डर को मैन्युअल रूप से हटाएं।"
     }
 }

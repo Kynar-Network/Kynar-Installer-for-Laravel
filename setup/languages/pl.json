@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Rozszerzenie PDO SQLite jest opcjonalne dla obsługi bazy danych SQLite.",
         "ext_desc.pdo_mysql": "Rozszerzenie PDO MySQL jest opcjonalne dla obsługi baz danych MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Rozszerzenie PDO PostgreSQL jest opcjonalne dla obsługi bazy danych PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Rozszerzenie PDO SQL Server jest opcjonalne dla obsługi bazy danych SQL Server."
+        "ext_desc.pdo_sqlsrv": "Rozszerzenie PDO SQL Server jest opcjonalne dla obsługi bazy danych SQL Server.",
+        "delete_folder_failed": "Błąd: Usunięcie folderu nie powiodło się. Proszę usunąć folder instalacyjny ręcznie."
     }
 }

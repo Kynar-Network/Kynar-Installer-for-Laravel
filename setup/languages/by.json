@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Расшырэнні PDO SQLite ўласныя для падтрымкі базы дадзеных SQLite.",
         "ext_desc.pdo_mysql": "Расшырэнні PDO MySQL ўласныя для падтрымкі баз дадзеных MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Расшырэнні PDO PostgreSQL ўласныя для падтрымкі базы дадзеных PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Расшырэнні PDO SQL Server ўласныя для падтрымкі базы дадзеных SQL Server."
+        "ext_desc.pdo_sqlsrv": "Расшырэнні PDO SQL Server ўласныя для падтрымкі базы дадзеных SQL Server.",
+        "delete_folder_failed": "Памылка: Не атрымалася выдаліць тэчку. Калі ласка, выдаліце тэчку наладак уручную."
     }
 }

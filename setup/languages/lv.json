@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite paplašinājums ir izvēles iespējama SQLite datubāzes atbalstam.",
         "ext_desc.pdo_mysql": "PDO MySQL paplašinājums ir izvēles iespējama MySQL/MariaDB datubāzes atbalstam.",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL paplašinājums ir izvēles iespējama PostgreSQL datubāzes atbalstam.",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server paplašinājums ir izvēles iespējama SQL Server datubāzes atbalstam."
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server paplašinājums ir izvēles iespējama SQL Server datubāzes atbalstam.",
+        "delete_folder_failed": "Kļūda: Neizdevās dzēst mapi. Lūdzu, manuāli izdzēsiet instalēšanas mapi."
     }
 }

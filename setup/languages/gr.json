@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Η επέκταση PDO SQLite είναι προαιρετική για υποστήριξη βάσεων δεδομένων SQLite.",
         "ext_desc.pdo_mysql": "Η επέκταση PDO MySQL είναι προαιρετική για υποστήριξη βάσεων δεδομένων MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Η επέκταση PDO PostgreSQL είναι προαιρετική για υποστήριξη βάσεων δεδομένων PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Η επέκταση PDO SQL Server είναι προαιρετική για υποστήριξη βάσεων δεδομένων SQL Server."
+        "ext_desc.pdo_sqlsrv": "Η επέκταση PDO SQL Server είναι προαιρετική για υποστήριξη βάσεων δεδομένων SQL Server.",
+        "delete_folder_failed": "Σφάλμα: Η διαγραφή του φακέλου απέτυχε. Παρακαλώ διαγράψτε τον φάκελο ρυθμίσεων χειροκίνητα."
     }
 }

@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Rozšíření PDO SQLite je volitelné pro podporu databáze SQLite.",
         "ext_desc.pdo_mysql": "Rozšíření PDO MySQL je volitelné pro podporu databází MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Rozšíření PDO PostgreSQL je volitelné pro podporu databáze PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Rozšíření PDO SQL Server je volitelné pro podporu databáze SQL Server."
+        "ext_desc.pdo_sqlsrv": "Rozšíření PDO SQL Server je volitelné pro podporu databáze SQL Server.",
+        "delete_folder_failed": "Chyba: Odstranění složky se nezdařilo. Prosím, odstraňte instalační složku ručně."
     }
 }

@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Расширение PDO SQLite является необязательным для поддержки базы данных SQLite.",
         "ext_desc.pdo_mysql": "Расширение PDO MySQL является необязательным для поддержки баз данных MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Расширение PDO PostgreSQL является необязательным для поддержки базы данных PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Расширение PDO SQL Server является необязательным для поддержки базы данных SQL Server."
+        "ext_desc.pdo_sqlsrv": "Расширение PDO SQL Server является необязательным для поддержки базы данных SQL Server.",
+        "delete_folder_failed": "Ошибка: Не удалось удалить папку. Пожалуйста, удалите папку установки вручную."
     }
 }

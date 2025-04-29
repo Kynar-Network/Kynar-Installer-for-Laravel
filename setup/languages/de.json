@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Die PDO SQLite-Erweiterung ist optional für SQLite-Datenbankunterstützung.",
         "ext_desc.pdo_mysql": "Die PDO MySQL-Erweiterung ist optional für MySQL/MariaDB-Datenbankunterstützung.",
         "ext_desc.pdo_pgsql": "Die PDO PostgreSQL-Erweiterung ist optional für PostgreSQL-Datenbankunterstützung.",
-        "ext_desc.pdo_sqlsrv": "Die PDO SQL Server-Erweiterung ist optional für SQL Server-Datenbankunterstützung."
+        "ext_desc.pdo_sqlsrv": "Die PDO SQL Server-Erweiterung ist optional für SQL Server-Datenbankunterstützung.",
+        "delete_folder_failed": "Fehler: Löschen des Ordners fehlgeschlagen. Bitte löschen Sie den Setup-Ordner manuell."
     }
 }

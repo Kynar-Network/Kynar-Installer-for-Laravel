@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "L'estensione PDO SQLite è opzionale per il supporto al database SQLite.",
         "ext_desc.pdo_mysql": "L'estensione PDO MySQL è opzionale per il supporto ai database MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "L'estensione PDO PostgreSQL è opzionale per il supporto al database PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "L'estensione PDO SQL Server è opzionale per il supporto al database SQL Server."
+        "ext_desc.pdo_sqlsrv": "L'estensione PDO SQL Server è opzionale per il supporto al database SQL Server.",
+        "delete_folder_failed": "Errore: Cancellazione della cartella non riuscita. Si prega di eliminare la cartella di installazione manualmente."
     }
 }

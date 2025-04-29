@@ -1,5 +1,5 @@
 <?php $this->section('title'); ?>
-    <?php echo t('summary_title', 'Installation Summary'); ?>
+<?php echo t('summary_title', 'Installation Summary'); ?>
 <?php $this->endSection(); ?>
 <div class="container mx-auto p-8 shadow-lg rounded-lg w-full bg-gray-100 dark:bg-gray-800">
     <h1 class="text-4xl font-bold mb-6 text-center dark:text-white">
@@ -161,20 +161,31 @@
 
 <!-- JavaScript for handling the Complete button click -->
 <script>
-    document.getElementById("completeButton").addEventListener("click", function(event) {
+    document.getElementById("completeButton").addEventListener("click", async function(event) {
         event.preventDefault();
-        fetch("<?php echo generateUrl('setup.complete'); ?>", {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: new URLSearchParams({
-                    key: "<?php echo $key; ?>"
-                }).toString()
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.redirect) {
+        const {
+            success,
+            data
+        } = await performFetch(
+            "<?php echo generateUrl('setup.complete'); ?>",
+            'POST', {}, {
+                key: "<?php echo $key; ?>"
+            }
+        );
+
+        if (success && data) {
+            console.log(data);
+            console.log('Operation completed successfully');
+            if (data.redirect) {
+                // Delete folder and appear the message if success
+                const deletefolder = await performFetch(
+                    "<?php echo generateUrl('setup.delete-folder'); ?>",
+                    'POST', {}, {
+                        key: "<?php echo $key; ?>"
+                    }
+                );
+
+                if (deletefolder.success) {
                     Swal.fire({
                         title: `<?php echo htmlspecialchars(t("congratulations", "Congratulations!")); ?>`,
                         html: `<p>${data.message}</p>`,
@@ -186,14 +197,18 @@
                             window.location.href = data.url;
                         }
                     });
-                } else {
-                    console.log(data.message);
-                    alert(data.message);
                 }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("Error:", error);
-            });
+                else {
+                    console.error("<?php echo htmlspecialchars('delete_folder_failed', 'Error: Deleting folder failed. Please delete the setup folder manually.'); ?>");
+                    alert("<?php echo htmlspecialchars('delete_folder_failed', 'Error: Deleting folder failed. Please delete the setup folder manually.'); ?>");
+                }
+            } else {
+                console.log(data.message);
+                alert(data.message);
+            }
+        } else {
+            console.error("<?php echo htmlspecialchars('error', '❌ Error: '); ?>", data.error);
+            alert("<?php echo htmlspecialchars('error', '❌ Error: '); ?>", data.error);
+        }
     });
 </script>

@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite 확장은 SQLite 데이터베이스 지원이 선택 사항입니다.",
         "ext_desc.pdo_mysql": "PDO MySQL 확장은 MySQL/MariaDB 데이터베이스 지원이 선택 사항입니다.",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL 확장은 PostgreSQL 데이터베이스 지원이 선택 사항입니다.",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server 확장은 SQL Server 데이터베이스 지원이 선택 사항입니다."
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server 확장은 SQL Server 데이터베이스 지원이 선택 사항입니다.",
+        "delete_folder_failed": "오류: 폴더 삭제에 실패했습니다. 설치 폴더를 수동으로 삭제하십시오."
     }
 }

@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite laiend on valikuline SQLite andmebaasi toetamiseks.",
         "ext_desc.pdo_mysql": "PDO MySQL laiend on valikuline MySQL/MariaDB andmebaasi toetamiseks.",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL laiend on valikuline PostgreSQL andmebaasi toetamiseks.",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server laiend on valikuline SQL Server andmebaasi toetamiseks."
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server laiend on valikuline SQL Server andmebaasi toetamiseks.",
+        "delete_folder_failed": "Viga: Kausta kustutamine ebaõnnestus. Palun kustutage paigalduskaust käsitsi."
     }
 }

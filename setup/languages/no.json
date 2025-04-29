@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite-utvidelsen er valgfri for støtte til SQLite-database.",
         "ext_desc.pdo_mysql": "PDO MySQL-utvidelsen er valgfri for støtte til MySQL/MariaDB-databaser.",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL-utvidelsen er valgfri for støtte til PostgreSQL-database.",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server-utvidelsen er valgfri for støtte til SQL Server-database."
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server-utvidelsen er valgfri for støtte til SQL Server-database.",
+        "delete_folder_failed": "Feil: Sletting av mappe mislyktes. Vennligst slett oppsettsmappen manuelt."
     }
 }

@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite eklentisi SQLite veritabanı desteği için isteğe bağlıdır.",
         "ext_desc.pdo_mysql": "PDO MySQL eklentisi MySQL/MariaDB veritabanı desteği için isteğe bağlıdır.",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL eklentisi PostgreSQL veritabanı desteği için isteğe bağlıdır.",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server eklentisi SQL Server veritabanı desteği için isteğe bağlıdır."
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server eklentisi SQL Server veritabanı desteği için isteğe bağlıdır.",
+        "delete_folder_failed": "Hata: Klasör silme başarısız oldu. Lütfen kurulum klasörünü el ile silin."
     }
 }

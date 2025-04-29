@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Розширення PDO SQLite є опціональним для підтримки бази даних SQLite.",
         "ext_desc.pdo_mysql": "Розширення PDO MySQL є опціональним для підтримки баз даних MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Розширення PDO PostgreSQL є опціональним для підтримки бази даних PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Розширення PDO SQL Server є опціональним для підтримки бази даних SQL Server."
+        "ext_desc.pdo_sqlsrv": "Розширення PDO SQL Server є опціональним для підтримки бази даних SQL Server.",
+        "delete_folder_failed": "Помилка: Не вдалося видалити папку. Будь ласка, видаліть папку налаштувань вручну."
     }
 }

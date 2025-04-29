@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "A extensão PDO SQLite é opcional para suporte ao banco de dados SQLite.",
         "ext_desc.pdo_mysql": "A extensão PDO MySQL é opcional para suporte ao banco de dados MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "A extensão PDO PostgreSQL é opcional para suporte ao banco de dados PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "A extensão PDO SQL Server é opcional para suporte ao banco de dados SQL Server."
+        "ext_desc.pdo_sqlsrv": "A extensão PDO SQL Server é opcional para suporte ao banco de dados SQL Server.",
+        "delete_folder_failed": "Erro: Falha ao excluir a pasta. Por favor, exclua a pasta de configuração manualmente."
     }
 }

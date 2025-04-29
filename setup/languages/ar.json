@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "امتداد PDO SQLite اختياري لدعم قاعدة البيانات SQLite.",
         "ext_desc.pdo_mysql": "امتداد PDO MySQL اختياري لدعم قواعد البيانات MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "امتداد PDO PostgreSQL اختياري لدعم قاعدة البيانات PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "امتداد PDO SQL Server اختياري لدعم قاعدة بيانات SQL Server."
+        "ext_desc.pdo_sqlsrv": "امتداد PDO SQL Server اختياري لدعم قاعدة بيانات SQL Server.",
+        "delete_folder_failed": "خطأ: فشل حذف المجلد. يرجى حذف مجلد الإعداد يدويًا."
     }
 }

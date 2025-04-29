@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "PDO SQLite-laajennus on valinnainen SQLite-tietokannan tueto varten.",
         "ext_desc.pdo_mysql": "PDO MySQL-laajennus on valinnainen MySQL/MariaDB-tietokannan tueto varten.",
         "ext_desc.pdo_pgsql": "PDO PostgreSQL-laajennus on valinnainen PostgreSQL-tietokannan tueto varten.",
-        "ext_desc.pdo_sqlsrv": "PDO SQL Server-laajennus on valinnainen SQL Server-tietokannan tueto varten."
+        "ext_desc.pdo_sqlsrv": "PDO SQL Server-laajennus on valinnainen SQL Server-tietokannan tueto varten.",
+        "delete_folder_failed": "Virhe: Kansion poistaminen epäonnistui. Poista asennuskansio manuaalisesti."
     }
 }

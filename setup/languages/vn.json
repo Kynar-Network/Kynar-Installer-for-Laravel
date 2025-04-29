@@ -361,6 +361,7 @@
         "ext_desc.pdo_sqlite": "Bản mở rộng PDO SQLite là tùy chọn để hỗ trợ cơ sở dữ liệu SQLite.",
         "ext_desc.pdo_mysql": "Bản mở rộng PDO MySQL là tùy chọn để hỗ trợ các cơ sở dữ liệu MySQL/MariaDB.",
         "ext_desc.pdo_pgsql": "Bản mở rộng PDO PostgreSQL là tùy chọn để hỗ trợ cơ sở dữ liệu PostgreSQL.",
-        "ext_desc.pdo_sqlsrv": "Bản mở rộng PDO SQL Server là tùy chọn để hỗ trợ cơ sở dữ liệu SQL Server."
+        "ext_desc.pdo_sqlsrv": "Bản mở rộng PDO SQL Server là tùy chọn để hỗ trợ cơ sở dữ liệu SQL Server.",
+        "delete_folder_failed": "Lỗi: Xóa thư mục thất bại. Vui lòng xóa thư mục cài đặt thủ công."
     }
 }
