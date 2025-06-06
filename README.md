@@ -17,7 +17,7 @@ Kynar Installer is a sophisticated web-based installation wizard designed to str
 
 ## How to Use
 #### **Step 1: Upload Files**
-Upload the necessary files to the `public` directory of your Laravel application.
+Upload the necessary `index.php` (you can decide if you want manually add or overwrite, more information below) and `setup` folder to the `public` directory of your Laravel application.
 
 #### **Step 2: Modify `index.php`**
 You have two options:
